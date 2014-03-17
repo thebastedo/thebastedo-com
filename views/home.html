@@ -1,0 +1,8 @@
+<h2>{{message}}</h2>
+<article ng-repeat="update in updates | orderBy: '-date'">
+<div>
+<h3>{{update.title}}</h3>
+<div class="timestamp">{{update.date}}</div>
+</div>
+<p>{{update.body}}</p>
+</article>
